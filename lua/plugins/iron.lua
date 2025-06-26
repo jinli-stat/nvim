@@ -24,7 +24,7 @@ return {
 
     -- 快捷键映射
     -- <leader>sr - 启动/聚焦 Julia REPL（会在右侧打开垂直分割窗口）
-    vim.keymap.set('n', '<leader>sr', '<cmd>IronRepl<CR>', { desc = 'Iron: Start/Focus REPL' })
+    vim.keymap.set('n', '<leader>so', '<cmd>IronRepl<CR>', { desc = 'Iron: Start/Focus REPL' })
     
     -- <leader>sc - 发送当前行（Normal模式）或选中内容（Visual模式）到 REPL
     vim.keymap.set('n', '<leader>sc', function() iron.send_line() end, { desc = 'Iron: Send current line' })

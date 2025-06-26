@@ -1,3 +1,5 @@
+-- ~/.config/nvim/lua/config/lazy.lua
+
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   local lazyrepo = "https://github.com/folke/lazy.nvim.git"
@@ -30,7 +32,10 @@ require("lazy").setup({
     version = false, -- always use the latest git commit
     -- version = "*", -- try installing the latest stable version for plugins that support semver
   },
-  install = { colorscheme = { "tokyonight", "habamax" } },
+  install = {
+    -- 移除了 colorscheme 设置，让我们的智能配置来处理
+    missing = true,
+  },
   checker = {
     enabled = true, -- check for plugin updates periodically
     notify = false, -- notify on update
@@ -51,3 +56,4 @@ require("lazy").setup({
     },
   },
 })
+
