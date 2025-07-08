@@ -7,6 +7,6 @@
 ##  🚀 安装步骤
 
 ```bash
-git clone https://github.com/jinli-stat/.nvim.git ~/.config/nvim
+git clone https://github.com/jinli-stat/nvim.git ~/.config/nvim
 ```
 
