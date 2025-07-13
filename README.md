@@ -1,6 +1,6 @@
 ## ✨Neovim 配置
 
-这是一个基于  [AstroNvim](https://github.com/LazyVim/starter) 的 Neovim 配置。
+这是一个基于  [AstroNvim](https://github.com/AstroNvim/AstroNvim) 的 Neovim 配置。
 
 
 ##  🚀 安装步骤
