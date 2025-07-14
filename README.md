@@ -28,8 +28,6 @@ git clone https://github.com/jinli-stat/nvim.git ~/.config/nvim
 ```cmd
 move "%LOCALAPPDATA%\nvim" "%LOCALAPPDATA%\nvim.bak"
 move "%LOCALAPPDATA%\nvim-data" "%LOCALAPPDATA%\nvim-data.bak"
-move "%LOCALAPPDATA%\nvim-state" "%LOCALAPPDATA%\nvim-state.bak"
-move "%LOCALAPPDATA%\nvim-cache" "%LOCALAPPDATA%\nvim-cache.bak"
 ```
 
 安装：
@@ -42,10 +40,8 @@ git clone https://github.com/jinli-stat/nvim.git %LOCALAPPDATA%\nvim
 
 备份：
 ```powershell
-Move-Item $env:LOCALAPPDATA\nvim $env:LOCALAPPDATA\nvim.bak -ErrorAction SilentlyContinue
-Move-Item $env:LOCALAPPDATA\nvim-data $env:LOCALAPPDATA\nvim-data.bak -ErrorAction SilentlyContinue
-Move-Item $env:LOCALAPPDATA\nvim-state $env:LOCALAPPDATA\nvim-state.bak -ErrorAction SilentlyContinue
-Move-Item $env:LOCALAPPDATA\nvim-cache $env:LOCALAPPDATA\nvim-cache.bak -ErrorAction SilentlyContinue
+Rename-Item -Path $env:LOCALAPPDATA\nvim -NewName $env:LOCALAPPDATA\nvim.bak
+Rename-Item -Path $env:LOCALAPPDATA\nvim-data -NewName $env:LOCALAPPDATA\nvim-data.bak
 ```
 
 安装：
