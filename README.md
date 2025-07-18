@@ -18,6 +18,8 @@ mv ~/.cache/nvim ~/.cache/nvim.bak
 安装：
 ```bash
 git clone https://github.com/jinli-stat/nvim.git ~/.config/nvim
+
+rm -rf ~/.config/nvim/.git
 ```
 
 ### Windows:
