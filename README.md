@@ -51,3 +51,15 @@ Rename-Item -Path $env:LOCALAPPDATA\nvim-data -NewName $env:LOCALAPPDATA\nvim-da
 git clone https://github.com/jinli-stat/nvim.git $env:LOCALAPPDATA\nvim
 ```
 
+
+## 一些快捷键
+
+- <leader>so - Start/Focus REPL
+- <leader>sc - Send current line/selection to REPL
+- <leader>sf - Send entire file to REPL
+- <leader>sx - Restart REPL
+- <leader>sq - Hide REPL window
+- <leader>si - Interrupt REPL execution
+- <leader>cl - Clear REPL screen
+- <leader>ss - Focus on REPL window
+
